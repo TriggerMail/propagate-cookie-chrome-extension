@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Propagate Cookie</title>
+        <style>
+          label {
+            cursor: pointer;
+          }
+
+          input[type="text"] {
+            width: 400px;
+          }
+
+          .form-row {
+            height: 35px;
+          }
+        </style>
+    </head>
+    <body>
+        <form id="settings-form">
+          <div class="form-row">
+            <label for="endpoint">
+              Endpoint URI:
+            </label>
+            <input id="endpoint" name="endpoint" type="text"></input>
+          </div>
+          <div class="form-row">
+            <label for="cookie">
+              Cookie name:
+            </label>
+            <input id="cookie" name="cookie" type="text"></input>
+          </div>
+          <div class="form-row">
+            <label for="watchChanges">
+              <input id="watchChanges" type="checkbox" name="watchChanges"></input>
+              Watch cookie changes
+            </label>
+          </div>
+          <button type="submit">Save settings</button>
+        </form>
+
+        <script src="panel.js"></script>
+    </body>
+</html>

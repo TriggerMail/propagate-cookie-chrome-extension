@@ -1,0 +1,32 @@
+{
+  "name": "Propagate cookies extension",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "permissions": [
+    "storage",
+    "tabs",
+    "cookies",
+    "notifications",
+    "<all_urls>"
+  ],
+  "icons": {
+    "16": "img/icon.png",
+    "48": "img/icon.png",
+    "128": "img/icon.png"
+  },
+  "minimum_chrome_version": "42",
+  "devtools_page": "main.html",
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "browser_action": {
+    "default_icon": {
+      "16": "img/icon.png",
+      "48": "img/icon.png",
+      "128": "img/icon.png"
+    },
+    "default_title": "Click to Propagate Cookie"
+  }
+}
