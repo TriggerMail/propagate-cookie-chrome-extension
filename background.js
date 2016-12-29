@@ -83,7 +83,7 @@ var main = function() {
 
   updateSettings();
   chrome.browserAction.onClicked.addListener(function() {
-    chrome.tabs.query({active: true}, function(tabs) {
+    chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
       var tab = tabs[0];
 
       chrome.tabs.executeScript(tab.id, {
